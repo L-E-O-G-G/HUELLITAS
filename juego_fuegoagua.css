@@ -1,0 +1,47 @@
+/* Estilo base para botones en la sección de juego */
+#juego-seccion .contenedor-ui {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#juego-seccion button {
+  background: linear-gradient(135deg, #95C5FF 0%, #9895FF 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(148, 158, 255, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  user-select: none;
+  outline-offset: 2px;
+  outline: none;
+}
+
+#juego-seccion button:focus {
+  outline: 3px solid #A6EF9F;
+}
+
+#juego-seccion button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #A6EF9F 0%, #95D6F5 100%);
+  box-shadow: 0 6px 14px rgba(166, 239, 159, 0.7);
+  transform: translateY(-2px);
+}
+
+#juego-seccion button:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 3px 7px rgba(148, 158, 255, 0.4);
+}
+
+#juego-seccion button:disabled {
+  background: #cccccc;
+  color: #666666;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+}
